@@ -1,0 +1,17 @@
+logLevel: info
+
+rtsp: yes
+rtspAddress: :8554
+rtspTransports: [udp, tcp]
+
+webrtc: yes
+webrtcAddress: :8889
+
+hls: no
+rtmp: no
+moq: no
+srt: yes
+srtAddress: :8890
+
+paths:
+  all_others:

@@ -1,0 +1,72 @@
+# ---------- CLion / JetBrains ----------
+.idea/
+cmake-build-*/
+*.iml
+
+# ---------- Visual Studio / VS Code ----------
+.vs/
+out/
+build/
+CMakeUserPresets.json
+*.user
+*.suo
+*.vcxproj.filters
+.vscode/
+
+# ---------- Artefatos do CMake (build in-source acidental) ----------
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+compile_commands.json
+_deps/
+
+# ---------- Executáveis e binários compilados ----------
+/transmissor
+/receptor
+/pipeline_atividade2_a
+/pipeline_atividade2_b
+/flashback_pipeline
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.o
+*.a
+*.so
+*.dll
+*.out
+
+# ---------- Logs e temporários ----------
+*.log
+*~
+*.swp
+
+# ---------- Mídia pesada (evita commit acidental) ----------
+*.webm
+*.mp4
+*.mkv
+*.avi
+
+# ---------- MediaMTX (binário local; server/mediamtx.yml é versionado) ----------
+server/mediamtx
+server/mediamtx.exe
+server/*.tar.gz
+server/*.zip
+
+# ---------- Temporários de teste ----------
+*.tmp
+*.pcap
+*.dot
+tmp/
+
+# ---------- MediaMTX (certificados auto-gerados) ----------
+server/auto.key
+server/auto.crt
+.venv/
+
+# ---------- Ambiente / build (garantia) ----------
+build_*/
+__pycache__/
+*.pyc
